@@ -192,7 +192,6 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-column-gap: 58px;
 }
 
 .section-footer {
@@ -203,6 +202,8 @@ p {
 .footer-link {
   color: #226756;
   text-decoration: none;
+  margin-left: 28px;
+  margin-right: 28px;
 }
 
 .footer-link.w--current {
@@ -437,8 +438,11 @@ p {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
+  }
+
+  .footer-link {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .section-footer {
