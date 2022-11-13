@@ -486,6 +486,15 @@ p {
   padding-bottom: 50px;
 }
 
+.text-centre {
+  text-align: center;
+}
+
+.button-standard {
+  background-color: #226756;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     padding-right: 20px;
