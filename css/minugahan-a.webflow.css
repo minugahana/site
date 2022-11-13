@@ -521,8 +521,8 @@ p {
 
 @media screen and (max-width: 767px) {
   .image-wrap {
-    height: 50vh;
-    min-height: 395px;
+    height: auto;
+    min-height: 0px;
   }
 
   .menu-button.w--open {
@@ -530,8 +530,8 @@ p {
   }
 
   .home-image-wrap {
-    height: 50vh;
-    min-height: 395px;
+    height: auto;
+    min-height: 0px;
   }
 }
 
@@ -590,11 +590,6 @@ p {
     justify-content: center;
   }
 
-  .image-wrap {
-    height: 40vh;
-    min-height: 320px;
-  }
-
   .footer-wrap {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -622,10 +617,6 @@ p {
     padding-bottom: 60px;
   }
 
-  .home-image-wrap {
-    height: 40vh;
-    min-height: 320px;
-  }
 
   .size-block {
     min-width: 0px;
