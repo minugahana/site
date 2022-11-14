@@ -108,14 +108,6 @@ p {
   display: none;
 }
 
-.image-cover {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .image-wrap {
   position: relative;
   width: 100%;
@@ -368,26 +360,6 @@ p {
   border: 1px solid #226756;
 }
 
-.grid {
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.div-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .embed-cart {
   position: absolute;
   left: 0%;
@@ -423,32 +395,8 @@ p {
   color: #675c22;
 }
 
-.nav-icon-cart {
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-}
-
-.embed-search {
-  overflow: hidden;
-  width: 300px;
-  height: 30px;
-  margin-bottom: 0px;
-}
-
-.nav-link-search {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  height: 30px;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+.nav-link-cart.show-mobile {
+  display: none;
 }
 
 .tabs-menu {
@@ -481,11 +429,6 @@ p {
   background-color: transparent;
 }
 
-.tab-pane {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .text-centre {
   text-align: center;
 }
@@ -493,6 +436,10 @@ p {
 .button-standard {
   background-color: #226756;
   font-weight: 400;
+}
+
+.burger-cart-wrap {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -530,8 +477,12 @@ p {
   }
 
   .home-image-wrap {
-    height: auto;
-    min-height: 0px;
+    height: 50vh;
+    min-height: 395px;
+  }
+
+  .burger-cart-wrap {
+    display: block;
   }
 }
 
@@ -563,6 +514,7 @@ p {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    grid-column-gap: 0px;
     -ms-grid-columns: 1fr -webkit-min-content;
     -ms-grid-columns: 1fr min-content;
     grid-template-columns: 1fr -webkit-min-content;
@@ -570,11 +522,7 @@ p {
   }
 
   .link-wrap-right {
-    position: fixed;
-    left: auto;
-    top: auto;
-    right: 20px;
-    bottom: 10px;
+    display: none;
   }
 
   .link-wrap-right.show-mobile {
@@ -582,12 +530,17 @@ p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+  .image-wrap {
+    height: auto;
+    min-height: 0px;
   }
 
   .footer-wrap {
@@ -600,7 +553,6 @@ p {
 
   .section-footer {
     padding-top: 100px;
-    padding-bottom: 50px;
   }
 
   .footer-link {
@@ -617,6 +569,10 @@ p {
     padding-bottom: 60px;
   }
 
+  .home-image-wrap {
+    height: auto;
+    min-height: 0px;
+  }
 
   .size-block {
     min-width: 0px;
@@ -634,6 +590,32 @@ p {
 
   .text-field-form {
     margin-bottom: 0px;
+  }
+
+  .nav-link-cart.show-mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .burger-cart-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 5px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -1447,6 +1429,11 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  #w-node-_7844f824-d470-5eb1-758f-88f049aa8005-9ac15fb5 {
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
   #w-node-_649394a2-8411-ead7-0575-63509ac15fc1-9ac15fb5 {
     -ms-grid-column-align: center;
     justify-self: center;
