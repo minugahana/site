@@ -94,29 +94,10 @@
       }, 100);
     }
   });
-  /*
-  Ecwid.OnPageLoaded.add(function(page){
-    console.log(page);
-    if(Ecwid.getVisitorLocation().countryCode === 'MY' && page.type === 'PRODUCT'){
-      console.log('Malaysian',$('input[name="Country"]').length)
-      var checkExist = setInterval(function() {
-        if ($('#loadingDiv').is(':hidden')) {
-          console.log("loading completed!");
-          clearInterval(checkExist);
-          $('input[name="Country"]').click()	
-        }
-      }, 100);
-    }
-  });
-*/
+
   Ecwid.OnProductOptionsChanged.add(function() {
     beforeDiscount = parseFloat($($('.details-product-price__value')[0]).text().replace('RM', ''))	
     discount = parseFloat($('.option-surcharge__value').text().replace('-RM', ''))
-    /*
-    if(Ecwid.getVisitorLocation().countryCode === 'MY'){
-      $('.product-details__product-price').append(`<div class="product-details__product-price ec-price-item" style="margin-bottom:0px"><s class="ec-price-item" style="font-size: 15px;">AU$${beforeDiscount.toFixed(2)}</s><span> (Malaysian Price)</span></div>`)    
-    }
-    */
   });
   Ecwid.OnPageLoaded.add(function(page){
     console.log(page);
