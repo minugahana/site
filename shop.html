@@ -120,7 +120,7 @@
   });
   Ecwid.OnPageLoaded.add(function(page){
     console.log(page);
-    if(page.type === 'SEARCH' || page.type === 'ACCOUNT_ROOT' || page.type === 'CART') {
+    if(page.type === 'SEARCH' || page.type === 'ACCOUNT_ROOT' || page.type === 'CART' || page.type === 'CHECKOUT_ADDRESS' || page.type === 'CHECKOUT_DELIVERY' || page.type === 'CHECKOUT_PAYMENT_DETAILS' ) {
       console.log('yes');
       $('.tabs-menu').addClass('hide');
     } else {
