@@ -134,7 +134,9 @@ p {
 }
 
 @media only screen and (min-width: 769px) {
-  font-size: 20px;
+  .button-home {
+    font-size: 20px;
+  }
 }
 
 .text-field {
