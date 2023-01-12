@@ -117,16 +117,16 @@ p {
 .subscribe-button {
   margin-bottom: -5px;
   padding: 5px 10px 0px;
-  border-bottom: 1px none #000;
+  border-bottom: 1px none #226756;
   background-color: transparent;
   color: #226756;
 }
 
 .button-home {
-  position:absolute;
+  position: absolute;
   margin-bottom: -5px;
-  padding: 5px 10px 0px;
-  border-bottom: 1px none #000;
+  padding: 5px 15px;
+  border: 1px solid #000;
   background-color: white;
   color: #226756;
 }
@@ -247,6 +247,9 @@ p {
 
 .home-image-wrap {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
