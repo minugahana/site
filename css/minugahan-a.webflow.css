@@ -129,6 +129,7 @@ p {
   border: 1px solid #226756 ;
   background-color: white;
   color: #226756;
+  text-decoration: none;
 }
 
 .text-field {
