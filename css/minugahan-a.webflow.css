@@ -122,6 +122,15 @@ p {
   color: #226756;
 }
 
+.button-home {
+  position:absolute;
+  margin-bottom: -5px;
+  padding: 5px 10px 0px;
+  border-bottom: 1px none #000;
+  background-color: white;
+  color: #226756;
+}
+
 .text-field {
   margin-bottom: 0px;
   padding-right: 15px;
