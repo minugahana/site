@@ -130,6 +130,11 @@ p {
   background-color: white;
   color: #226756;
   text-decoration: none;
+  line-height: 1.2em;
+}
+
+@media (min-width:769px) {
+  font-size: 20px;
 }
 
 .text-field {
