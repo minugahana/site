@@ -1486,3 +1486,6 @@ p {
   }
 }
 
+.abouthidden {
+  display: none;
+}
