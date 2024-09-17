@@ -1487,5 +1487,5 @@ p {
 }
 
 .about-hidden {
-  display: none;
+  display: none !important
 }
