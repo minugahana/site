@@ -1486,3 +1486,6 @@ p {
   }
 }
 
+.hidden-about {
+  display: none !important
+}
