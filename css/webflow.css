@@ -1830,3 +1830,6 @@ textarea.w-select {
 .wf-layout-cell {
   display: flex !important;
 }
+.about-hidden {
+  display: none !important;
+}
