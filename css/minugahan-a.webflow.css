@@ -1,3 +1,6 @@
+.about-hide {
+  display: none !important
+}
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
