@@ -645,6 +645,10 @@ p {
     min-height: auto !important;
   }
 
+  .grid-size .inch-left-header {
+    font-size: 13px;
+  }
+
   .care_rich-text p {
     font-size: 18px;
   }
