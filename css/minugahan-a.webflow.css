@@ -645,7 +645,7 @@ p {
     min-height: auto !important;
   }
 
-  .grid-inch .inch-left-header .size-block {
+  .size-block {
     font-size: 13px !important;
   }
 
