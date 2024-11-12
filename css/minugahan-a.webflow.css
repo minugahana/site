@@ -644,11 +644,11 @@ p {
   .size-block.header {
     min-height: auto !important;
   }
-
+/*
   .inch-left-header .size-block {
     font-size: 13px !important;
   }
-
+*/
   .care_rich-text p {
     font-size: 18px;
   }

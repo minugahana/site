@@ -712,6 +712,9 @@ textarea.w-select {
   .w-container {
     max-width: none;
   }
+  .inch-left-header .size-block {
+    font-size: 13px !important;
+  }
   .w-hidden-main {
     display: inherit !important;
   }
