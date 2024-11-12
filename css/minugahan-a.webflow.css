@@ -308,6 +308,7 @@ p {
   white-space: nowrap;
 }
 
+
 .size-block.header {
   font-weight: 700;
 }
@@ -632,6 +633,12 @@ p {
   .size-block {
     min-width: 0px;
     padding: 13px 8px;
+  }
+
+  .grid-inch .size-block {
+    white-space: normal;
+    padding: 13px 8px;
+    min-height: 72px;
   }
 
   .care_rich-text p {
