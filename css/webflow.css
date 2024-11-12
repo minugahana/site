@@ -714,6 +714,7 @@ textarea.w-select {
   }
   .inch-left-header .size-block {
     font-size: 13px !important;
+    min-width: 54px;
   }
   .w-hidden-main {
     display: inherit !important;
