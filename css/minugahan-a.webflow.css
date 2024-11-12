@@ -641,6 +641,10 @@ p {
     min-height: 72px;
   }
 
+  .size-block.header {
+    min-height: auto !important;
+  }
+
   .care_rich-text p {
     font-size: 18px;
   }
